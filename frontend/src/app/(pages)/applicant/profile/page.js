@@ -2,11 +2,9 @@
 
 import Image from "next/image";
 import Header from "@/app/components/Header";
-import ProtectedRoute from "@/app/components/ProtectedRoute";
 
 export default function Profile() {
   return (
-    <ProtectedRoute userType="recruiter">
     <div className="min-h-screen w-full bg-gradient-to-tr from-[#45D1DD] to-gray-300">
       <Header currentPage="profile" userType="applicant" />
 
@@ -124,6 +122,5 @@ export default function Profile() {
         </div>
       </div>
     </div>
-    </ProtectedRoute>
   );
 }
